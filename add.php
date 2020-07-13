@@ -34,7 +34,7 @@
       //set up our query 
       $sql = "SELECT * FROM songs WHERE user_id = :user_id;"; 
       //prepare our statement
-      $statement = $db->prepare($sql); 
+      $statement = $conn->prepare($sql); 
       //bind 
       $statement->bindParam(':user_id', $id); 
       //execute 
